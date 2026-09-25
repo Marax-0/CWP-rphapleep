@@ -1,4 +1,5 @@
 def checkmate(board):
+
     if not board:
         return
 
@@ -42,7 +43,7 @@ def checkmate(board):
             if piece in ('R','Q'):
                 print("Success")
                 return
-            elif piece != '.':
+            elif piece in ('P','B'):
                 break
             r += dr
             c += dc
@@ -55,7 +56,7 @@ def checkmate(board):
             if piece in ('Q','B'):
                 print("Success")
                 return
-            elif piece != '.':
+            elif piece in ('P','R'):
                 break
             r += dr
             c += dc
